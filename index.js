@@ -129,5 +129,26 @@
                 alert ('Insufficient Balance🙂')
             }
         })
+
         
-  
+  document.getElementById('btn1').addEventListener(
+    'click', function(){
+        document.getElementById('donationSection').classList.remove('hidden');
+        document.getElementById('donationHistory').classList.add('hidden');
+        document.getElementById('btn1').classList.add('bg-[rgb(180,244,97)]');
+        document.getElementById('btn1').classList.remove('hover:bg-gray-200', 'hover:font-bold', 'bg-white')
+        document.getElementById('btn2').classList.add('hover:bg-gray-200', 'hover:font-bold', 'bg-white');
+        document.getElementById('btn2').classList.remove('bg-[rgb(180,244,97)]')
+    }
+  )
+
+  document.getElementById('btn2').addEventListener(
+    'click', function(){
+        document.getElementById('donationSection').classList.add('hidden');
+        document.getElementById('donationHistory').classList.remove('hidden');
+        document.getElementById('btn2').classList.add('bg-[rgb(180,244,97)]');
+        document.getElementById('btn2').classList.remove('hover:bg-gray-200', 'hover:font-bold', 'bg-white')
+        document.getElementById('btn1').classList.add('hover:bg-gray-200', 'hover:font-bold', 'bg-white');
+        document.getElementById('btn1').classList.remove('bg-[rgb(180,244,97)]')
+    }
+  )
