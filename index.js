@@ -1,7 +1,7 @@
 
         document.getElementById('donationButton').addEventListener('click', function(){
             let inputAmount = document.getElementById('inputAmount').value;
-            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Donation is not a joke😒 Input a Valid Amount😊")
+            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Your Input is Invalid. try to type a Valid Input.")
                 return;
             }
             inputAmount = parseInt (inputAmount);
@@ -35,6 +35,8 @@
             let history = document.getElementById('donationHistory');
             history.appendChild(historyItem);
 
+            document.getElementById('my_modal_1').showModal();
+
             }
             else {
                 alert ('Insufficient Balance🙂')
@@ -46,7 +48,7 @@
         
         document.getElementById('donationButton2').addEventListener('click', function(){
             let inputAmount = document.getElementById('inputAmount2').value;
-            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Donation is not a joke😒 Input a Valid Amount😊")
+            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Your Input is Invalid. try to type a Valid Input.")
                 return;
             }
             inputAmount = parseInt (inputAmount);
@@ -80,6 +82,8 @@
             let history = document.getElementById('donationHistory');
             history.appendChild(historyItem);
 
+            document.getElementById('my_modal_1').showModal();
+
             }
             else {
                 alert ('Insufficient Balance🙂')
@@ -90,7 +94,7 @@
 
         document.getElementById('donationButton3').addEventListener('click', function(){
             let inputAmount = document.getElementById('inputAmount3').value;
-            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Donation is not a joke😒 Input a Valid Amount😊")
+            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Your Input is Invalid. try to type a Valid Input.")
                 return;
             }
             inputAmount = parseInt (inputAmount);
@@ -123,6 +127,8 @@
         
             let history = document.getElementById('donationHistory');
             history.appendChild(historyItem);
+
+            document.getElementById('my_modal_1').showModal();
 
             }
             else {

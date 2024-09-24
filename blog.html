@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- deisy cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,7 +30,81 @@
         }
       </script>
 </head>
-<body>  
-  
+<body >  
+  <nav class="flex  justify-between  item-center  px-10 py-6 bg-[#f9f7f3] bg-opacity-80">
+    <a href="index.html" class="bg-[rgb(180,244,97)] h-11  w-21  px-5 py-2 rounded-md ">
+        <button class="font-bold ">Home</button>
+    </a>
+    
+    <div class="flex  justify-between  items-center">        
+        <img src="assets/logo.png" alt="donate bangladesh logo in png" class="w-12 h-12 mx-2">
+        <h6 class="font-bold text-2xl">Donate Bangladesh</h6>
+    </div>
+    <div class="flex justify-between items-center gap-1 font-bold">
+        <img src="assets/coin.png" alt="">
+        <h6> <span id="mainBalance">5500</span>  BDT</h6>
+    </div>
+  </nav>
+  <main class="mx-40 my-32">
+    <h2 class="font-bold text-4xl mb-5">Important FAQ
+      <i class="fa-regular fa-circle-question"></i>
+    </h2>
+
+    <div class="flex flex-col gap-3">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p>Dom is a programming interface which represents the structure of a webpage like a tree and allow JavaScript to access, manipulate and update the contents of the the webpage. </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+        <div class="collapse-content">
+          <p>We can select and element from DOM by their
+            <ul class="list-disc pl-10">
+              <li>ID</li>
+              <li>ClassName</li>
+              <li>TagName</li>
+              <li>QuerySelector</li>
+            </ul>
+            and more.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event Delegation in the context of the DOM and why is it useful?</div>
+        <div class="collapse-content">
+          <p class="mx-3">Event Delegation is a technique where we can attach a single event listener to a parent element and handle it's child elements.
+            <br>
+          It is useful because it
+          <ul class="list-disc pl-10">
+            <li>Gives better experience by improving efficiency</li>
+            <li>It works for element that is added later and don't even need to add a new listener.</li>
+          </ul>
+          and more.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style using DOM?</div>
+        <div class="collapse-content">
+          <p>To manipulate an element's attributes and style using DOM by
+            <ul class="list-disc pl-10">
+              <li>Getting Attributes or style</li>
+              <li>Setting Attributes or style</li>
+              <li>Removing Attributes or style</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+    
+  </main>
 </body>
 </html>

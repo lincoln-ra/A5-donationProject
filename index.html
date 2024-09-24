@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- deisy cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,29 +29,7 @@
       </script>
 </head>
 <body style="font-family:Lexend;">
-    <nav class="sticky top-0 bg-opacity-50 backdrop-blur-md shadow-lg">
-        <div class="flex  justify-between  item-center  px-10 py-6 bg-[#f9f7f3] bg-opacity-80">
-            <a href="blog.html" class="bg-[rgb(180,244,97)] h-11  w-21  px-5 py-2 rounded-md ">
-                <button class="font-bold ">Blog</button>
-            </a>
-            
-            <div class="flex  justify-between  items-center">        
-                <img src="assets/logo.png" alt="donate bangladesh logo in png" class="w-12 h-12 mx-2">
-                <h6 class="font-bold text-2xl">Donate Bangladesh</h6>
-            </div>
-            <div class="flex justify-between items-center gap-1 font-bold">
-                <img src="assets/coin.png" alt="">
-                <h6> <span id="mainBalance">5500</span>  BDT</h6>
-            </div>
-        </div>
 
-        
-        <div class="flex justify-center items-center gap-3 p-3 mt-7">
-            <button class="border rounded-md p-2 w-32 bg-white hover:bg-gray-200 hover:font-bold" id="btn1">Donation</button>
-           
-            <button class="border rounded-md p-2 w-32 bg-white hover:bg-gray-200 hover:font-bold" id="btn2">history</button>
-        </div>
-    </nav>
     
 
     <main class="mx-40 my-10">
@@ -116,6 +99,26 @@
         <div class="p-3 hidden" id="donationHistory">
 
         </div>
+
+
+        <section>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box flex flex-col items-center ">
+                  <h3 class="text-4xl font-bold">Congrats!</h3>
+                  <img class="pt-5 " src="assets/coin.png" alt="">
+                  <p class="py-3">You have Donated for Humankind</p>
+                  <p class="font-bold text-2xl">successfully</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="btn">Close the Conformation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+        </section>
+
+
+
 
     </main>
 
