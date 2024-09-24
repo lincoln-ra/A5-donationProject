@@ -29,15 +29,37 @@
       </script>
 </head>
 <body style="font-family:Lexend;">
+    <nav class="sticky top-0 bg-opacity-50 backdrop-blur-md shadow-lg">
+        <div class="flex  justify-between  item-center  px-3 md:px-10 py-6 bg-[#f9f7f3] bg-opacity-80">
+            <a href="blog.html" class="bg-[rgb(180,244,97)] h-11  w-21  px-5 py-2 rounded-md text-center">
+                <button class="font-bold ">Blog</button>
+            </a>
+            
+            <div class="flex  justify-between  items-center ">        
+                <img src="assets/logo.png" alt="donate bangladesh logo in png" class="w-12 h-12 mx-2">
+                <h6 class="hidden md:block font-bold text-2xl">Donate Bangladesh</h6>
+            </div>
+            <div class="flex justify-between items-center gap-1 font-bold">
+                <img src="assets/coin.png" alt="">
+                <h6> <span id="mainBalance">5500</span>  BDT</h6>
+            </div>
+        </div>
 
+        
+        <div class="flex justify-center items-center gap-3 p-3 mt-3 md:mt-7">
+            <button class="border rounded-md p-2 w-32 bg-[rgb(180,244,97)] hover:bg-gray-200 hover:font-bold" id="btn1">Donation</button>
+           
+            <button class="border rounded-md p-2 w-32 bg-white hover:bg-gray-200 hover:font-bold" id="btn2">history</button>
+        </div>
+    </nav>
     
 
-    <main class="mx-40 my-10">
+    <main class="mx-5 md:mx-40 my-10">
         <div class="flex flex-col gap-8" id="donationSection">
-            <section class="flex justify-between gap-10 border p-5 rounded-lg">
-                <img src="assets/noakhali.png" alt="some volunteer going to help people with life boat" class="w-1/2">
+            <section class="flex flex-col md:flex-row justify-between gap-10 border p-5 rounded-lg">
+                <img src="assets/noakhali.png" alt="some volunteer going to help people with life boat" class="w-full md:w-1/2">
     
-                <div class="w-1/2 flex flex-col space-y-3">
+                <div class="w-full md:w-1/2 flex flex-col space-y-3">
                     <div class="flex items-center gap-3 py-3 bg-gray-100 w-36 px-2 rounded-2xl">
                         <img src="assets/coin.png" alt="image of and coin">
                         <h6> <span id="donatedBalance">1000</span> BDT</h6>
@@ -54,10 +76,10 @@
             
            
             
-            <section class="flex justify-between gap-10 border p-5 rounded-lg">
-                <img src="assets/feni.png" alt="some volunteer going to help people with life boat" class="w-1/2">
+            <section class="flex flex-col md:flex-row justify-between gap-10 border p-5 rounded-lg">
+                <img src="assets/feni.png" alt="Feni is under Water" class="w-full md:w-1/2">
     
-                <div class="w-1/2 flex flex-col space-y-3">
+                <div class="w-full md:w-1/2 flex flex-col space-y-3">
                     <div class="flex items-center gap-3 py-3 bg-gray-100 w-36 px-2 rounded-2xl">
                         <img src="assets/coin.png" alt="image of and coin">
                         <h6> <span id="donatedBalance2">1000</span> BDT</h6>
@@ -73,10 +95,10 @@
             </section>  
 
 
-<section class="flex justify-between gap-10 border p-5 rounded-lg">
-                <img src="assets/quota-protest.png" alt="some volunteer going to help people with life boat" class="w-1/2">
+<section class="flex flex-col md:flex-row justify-between gap-10 border p-5 rounded-lg">
+                <img src="assets/quota-protest.png" alt="Image of Quota movement" class="w-full md:w-1/2">
     
-                <div class="w-1/2 flex flex-col space-y-3">
+                <div class="w-full md:w-1/2 flex flex-col space-y-3">
                     <div class="flex items-center gap-3 py-3 bg-gray-100 w-36 px-2 rounded-2xl">
                         <img src="assets/coin.png" alt="image of an coin">
                         <h6> <span id="donatedBalance3">1000</span> BDT</h6>
