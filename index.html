@@ -59,7 +59,7 @@
                         <img src="assets/coin.png" alt="image of and coin">
                         <h6> <span id="donatedBalance">1000</span> BDT</h6>
                     </div>
-                    <h3 class="font-bold text-lg" >Donate for Flood at Noakhali, Bangladesh</h3>
+                    <h3 class="font-bold text-lg" id="title">Donate for Flood at Noakhali, Bangladesh</h3>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
     
                     <div class="flex flex-col gap-3">
@@ -67,38 +67,18 @@
                         <button class="bg-[rgb(180,244,97)] h-11  px-5 py-2 rounded-md font-bold" id="donationButton">Donate Now</button>
                     </div>
                 </div>
-            </section>
-            
-        
+            </section>    
+        </div>
+        <div class="p-3" id="donationHistory">
+
+        </div>
 
     </main>
 
 
-    <script>
-        document.getElementById('donationButton').addEventListener('click', function(){
-            let inputAmount = document.getElementById('inputAmount').value;
-            if (isNaN(inputAmount) || parseInt(inputAmount) <= 0) {alert("Donation is not a joke😒 Input a Valid Amount😊")
-                return;
-            }
-            inputAmount = parseInt (inputAmount);
-            let mainBalanceElement = document.getElementById('mainBalance');
-            let donatedBalanceElement = document.getElementById('donatedBalance');
-            let mainBalance = parseInt(mainBalanceElement.textContent);
-            let donatedBalance = parseInt(donatedBalanceElement.textContent);
-            if (inputAmount <= mainBalance){
-                mainBalance = mainBalance-inputAmount;
-                donatedBalance = donatedBalance+inputAmount;
 
 
-                mainBalanceElement.textContent = mainBalance;
-            donatedBalanceElement.textContent = donatedBalance;
-            
-            document.getElementById('inputAmount').value = '';
-            }
-            else {
-                alert ('Insufficient Balance')
-            }
-        })
-    </script>
+
+<script src="index.js"></script>
 </body>
 </html>
